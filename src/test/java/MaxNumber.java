@@ -1,16 +1,16 @@
 import java.util.Scanner;
 
-public class MinNumber {
+public class MaxNumber {
     public static void main(String[] args) {
         Scanner console = new Scanner(System.in);
 
-        int min = Integer.MAX_VALUE;
+        int max = Integer.MIN_VALUE;
         while (console.hasNextInt()) {
             int x = console.nextInt();
-            if (x < min) {
-                min = x;
+            if (x % 2 == 0 && x > max) {
+                max = x;
             }
+            }
+        System.out.println(max);
         }
-        System.out.println(min);
     }
-}
